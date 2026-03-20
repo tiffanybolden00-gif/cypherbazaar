@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>CYPHER BAZAAR | Elite Offensive Security Tools · Crypto Marketplace</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Acquire premium standalone hacking tools: Infostealer Suite, WormGPT Black, C2 Phantom Framework & React2Shell Exploit. Anonymous crypto payments: BTC, LTC, USDC (Solana). Instant delivery after TX verification.">
+    <meta name="keywords" content="hacking tools, infostealer, wormgpt, c2 framework, exploit tool, crypto payment, bitcoin, litecoin, usdc, offensive security, red team tools">
+    <meta name="author" content="Cypher Bazaar">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cypherbazaar.io/">
+    <meta property="og:title" content="CYPHER BAZAAR | Elite Hacking Tools · Crypto Only">
+    <meta property="og:description" content="Top 4 standalone hacker tools: Infostealer Suite ($295), WormGPT Black ($189), C2 Phantom ($449), React2Shell ($325). Pay with BTC, LTC or USDC on Solana.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=CYPHER+BAZAAR">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Cypher Bazaar">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cypherbazaar.io/">
+    <meta name="twitter:title" content="CYPHER BAZAAR | Offensive Security Tools">
+    <meta name="twitter:description" content="Acquire premium hacking tools with crypto. BTC, LTC, USDC accepted. Fully undetected tools for security research.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x600?text=Hacking+Tools">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://cypherbazaar.io/#website",
+          "url": "https://cypherbazaar.io/",
+          "name": "Cypher Bazaar",
+          "description": "Premium standalone offensive security tools marketplace accepting cryptocurrency",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Product",
+          "@id": "https://cypherbazaar.io/#infostealer",
+          "name": "INFOSTEALER SUITE",
+          "description": "Advanced credential harvesting tool with cookie stealer, crypto wallet extractor, and Telegram exfiltration. Fully undetected (FUD) with persistent access.",
+          "sku": "CYP-INF-001",
+          "offers": {
+            "@type": "Offer",
+            "price": "295",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-12-31"
+          },
+          "brand": {
+            "@type": "Brand",
+            "name": "Cypher Bazaar"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://cypherbazaar.io/#wormgpt",
+          "name": "WormGPT BLACK",
+          "description": "AI jailbreak engine and uncensored LLM fine-tuned for exploit generation, phishing templates, and polymorphic malware code.",
+          "sku": "CYP-AI-002",
+          "offers": {
+            "@type": "Offer",
+            "price": "189",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://cypherbazaar.io/#c2phantom",
+          "name": "C2 PHANTOM",
+          "description": "Enterprise-grade command and control framework with domain fronting, mTLS encryption, and fileless execution capabilities.",
+          "sku": "CYP-C2-003",
+          "offers": {
+            "@type": "Offer",
+            "price": "449",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://cypherbazaar.io/#react2shell",
+          "name": "React2Shell EXPLOIT",
+          "description": "Automated RCE exploit tool targeting React and Next.js vulnerabilities with mass exploitation capabilities and WAF bypass.",
+          "sku": "CYP-EXP-004",
+          "offers": {
+            "@type": "Offer",
+            "price": "325",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://cypherbazaar.io/#organization",
+          "name": "Cypher Bazaar",
+          "url": "https://cypherbazaar.io/",
+          "email": "tiffanybolden00@gmail.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "tiffanybolden00@gmail.com",
+            "contactType": "customer service",
+            "availableLanguage": "English"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0c15;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, monospace;
+            color: #eef5ff;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 5px #0ff, 0 0 2px #0ff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+        }
+
+        .cyber-header {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .cyber-header h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #aaffff, #ff44cc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -1px;
+        }
+
+        .badge-crypto {
+            background: #11151f;
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid #2aff9e;
+            color: #2aff9e;
+            margin-top: 1rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .tool-card {
+            background: rgba(10, 15, 27, 0.85);
+            backdrop-filter: blur(4px);
+            border-radius: 32px;
+            border: 1px solid rgba(0, 255, 255, 0.25);
+            padding: 1.8rem 1.5rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.6);
+        }
+
+        .tool-card:hover {
+            border-color: #0ff;
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+
+        .tool-icon {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-title {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(120deg, #fff, #7df9ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-sub {
+            font-size: 0.85rem;
+            color: #9aa9c7;
+            margin-bottom: 1rem;
+            font-family: monospace;
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #f0b27a;
+            margin: 1rem 0;
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+        }
+
+        .price-tag small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #9aa;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+        }
+
+        .feature-list i.fa-check-circle {
+            color: #0ff;
+            font-size: 0.9rem;
+        }
+
+        .buy-btn {
+            background: linear-gradient(95deg, #00c3ff20, #a020f020);
+            border: 1px solid #0ff;
+            padding: 0.8rem 0;
+            width: 100%;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #eef5ff;
+            transition: 0.2s;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .buy-btn:hover {
+            background: #0ff;
+            color: #000;
+            box-shadow: 0 0 15px #0ff;
+            border-color: #0ff;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: #0c0f1c;
+            border: 1px solid #0ff;
+            border-radius: 2rem;
+            max-width: 550px;
+            width: 90%;
+            padding: 2rem;
+            position: relative;
+            box-shadow: 0 0 35px rgba(0,255,255,0.3);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #ff66aa;
+            transition: 0.2s;
+        }
+        
+        .close-modal:hover {
+            color: #fff;
+            text-shadow: 0 0 10px #ff66aa;
+        }
+
+        .crypto-address-box {
+            background: #010101;
+            padding: 1rem;
+            border-radius: 20px;
+            word-break: break-all;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            border: 1px solid #2aff9e;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .address-text {
+            flex: 1;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            color: #0ff;
+        }
+
+        .copy-btn {
+            background: #2a2e44;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 40px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .copy-btn:hover {
+            background: #0ff;
+            color: #000;
+            transform: scale(1.02);
+        }
+        
+        .copy-btn.copied {
+            background: #2aff9e;
+            color: #000;
+        }
+
+        .warning-box {
+            background: #ff112210;
+            border-left: 4px solid #ff44cc;
+            padding: 0.8rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .method-tab {
+            background: #11151f;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            cursor: pointer;
+            border: 1px solid #2c3e66;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+        
+        .method-tab:hover {
+            border-color: #0ff;
+        }
+
+        .method-tab.active {
+            border-color: #0ff;
+            background: #0ff22a;
+            color: black;
+            font-weight: bold;
+            box-shadow: 0 0 10px #0ff;
+        }
+
+        .toast-msg {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0ff;
+            color: black;
+            padding: 12px 28px;
+            border-radius: 60px;
+            font-weight: bold;
+            z-index: 1200;
+            font-size: 0.9rem;
+            display: none;
+            box-shadow: 0 0 20px rgba(0,255,255,0.5);
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 600px) {
+            .toast-msg {
+                white-space: normal;
+                text-align: center;
+                width: 90%;
+                font-size: 0.8rem;
+            }
+        }
+
+        hr {
+            border-color: #1e2a3a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #6c7a91;
+            border-top: 1px solid #1e2a3a;
+        }
+        
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            .tool-title {
+                font-size: 1.5rem;
+            }
+            .cyber-header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .flash {
+            animation: pulse 0.3s ease-in-out;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.6; transform: scale(0.98); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        
+        .network-warning {
+            background: rgba(255, 77, 77, 0.15);
+            border: 1px solid #ff4d4d;
+            border-radius: 12px;
+            padding: 8px;
+            font-size: 0.75rem;
+            text-align: center;
+            margin-top: 8px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="cyber-header">
+        <h1><i class="fas fa-skull"></i> CYPHER BAZAAR · OFFSHORE TOOLS <i class="fas fa-bolt"></i></h1>
+        <div class="badge-crypto">
+            <i class="fab fa-bitcoin"></i> BTC · <i class="fas fa-coins"></i> LTC · <i class="fab fa-solana"></i> USDC (Solana)
+        </div>
+        <p style="margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto; color: #b4c8ff;">Top 4 standalone elite hacker tools — fully undetected, source included. Acquire with crypto, instant delivery after TX verification.</p>
+    </div>
+
+    <!-- TOP 4 MOST SOUGHT-AFTER HACKING TOOLS -->
+    <div class="tools-grid" id="toolsGrid">
+        <div class="tool-card" data-tool-id="infostealer" data-tool-name="INFOSTEALER SUITE" data-price="295">
+            <div class="tool-icon"><i class="fas fa-fingerprint"></i> <i class="fas fa-database"></i></div>
+            <div class="tool-title">INFOSTEALER SUITE</div>
+            <div class="tool-sub">LummaC2-class · Credential Harvester</div>
+            <div class="price-tag">$295 <small>USD · lifetime license</small></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Steals cookies, passwords, crypto wallets</li>
+                <li><i class="fas fa-check-circle"></i> Fully undetected (FUD) · Clipper module</li>
+                <li><i class="fas fa-check-circle"></i> Telegram exfil + web panel</li>
+                <li><i class="fas fa-check-circle"></i> Persistent & AMSI bypass</li>
+            </ul>
+            <button class="buy-btn trigger-payment" data-name="INFOSTEALER SUITE" data-price="295"><i class="fab fa-bitcoin"></i> Acquire with Crypto</button>
+        </div>
+
+        <div class="tool-card" data-tool-id="wormgpt" data-tool-name="WormGPT BLACK" data-price="189">
+            <div class="tool-icon"><i class="fas fa-brain"></i> <i class="fas fa-robot"></i></div>
+            <div class="tool-title">WormGPT BLACK</div>
+            <div class="tool-sub">AI Jailbreak Engine · Uncensored LLM</div>
+            <div class="price-tag">$189 <small>USD · source + API</small></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Fine-tuned for exploit generation</li>
+                <li><i class="fas fa-check-circle"></i> Phishing templates & polymorphic code</li>
+                <li><i class="fas fa-check-circle"></i> Local inference ready / GPU support</li>
+                <li><i class="fas fa-check-circle"></i> Stealth prompt engineering toolkit</li>
+            </ul>
+            <button class="buy-btn trigger-payment" data-name="WormGPT BLACK" data-price="189"><i class="fab fa-bitcoin"></i> Acquire with Crypto</button>
+        </div>
+
+        <div class="tool-card" data-tool-id="c2phantom" data-tool-name="C2 PHANTOM" data-price="449">
+            <div class="tool-icon"><i class="fas fa-network-wired"></i> <i class="fas fa-skull"></i></div>
+            <div class="tool-title">C2 PHANTOM</div>
+            <div class="tool-sub">Commercial C2 · Enterprise grade</div>
+            <div class="price-tag">$449 <small>USD · lifetime C2 engine</small></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Domain fronting + mTLS encryption</li>
+                <li><i class="fas fa-check-circle"></i> Custom stagers & VPS-ready panel</li>
+                <li><i class="fas fa-check-circle"></i> Sleep obfuscation, inline hooks</li>
+                <li><i class="fas fa-check-circle"></i> Multi-tenant, fileless execution</li>
+            </ul>
+            <button class="buy-btn trigger-payment" data-name="C2 PHANTOM" data-price="449"><i class="fab fa-bitcoin"></i> Acquire with Crypto</button>
+        </div>
+
+        <div class="tool-card" data-tool-id="react2shell" data-tool-name="React2Shell EXPLOIT" data-price="325">
+            <div class="tool-icon"><i class="fas fa-code-branch"></i> <i class="fas fa-bug"></i></div>
+            <div class="tool-title">React2Shell EXPLOIT</div>
+            <div class="tool-sub">Automated RCE · React/Next vuln scanner</div>
+            <div class="price-tag">$325 <small>USD · weaponized module</small></div>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-circle"></i> Server-side prototype pollution</li>
+                <li><i class="fas fa-check-circle"></i> Mass exploitation & reverse shell</li>
+                <li><i class="fas fa-check-circle"></i> Bypass WAF / SSRF chaining</li>
+                <li><i class="fas fa-check-circle"></i> Live dashboard & CVE-2025 integration</li>
+            </ul>
+            <button class="buy-btn trigger-payment" data-name="React2Shell EXPLOIT" data-price="325"><i class="fab fa-bitcoin"></i> Acquire with Crypto</button>
+        </div>
+    </div>
+
+    <div style="background: #03050b80; border-radius: 28px; padding: 1.5rem; margin: 1rem 0 2rem; text-align: center; border: 1px solid #ff44aa30;">
+        <i class="fas fa-shield-hooded" style="color: #ff44cc;"></i> <strong>⚡ standalone source delivery</strong> — after payment verification (TXID), you receive encrypted archive + setup guide within 2-12h.<br>
+        <span style="font-size: 0.8rem;">✅ Manual verification required: email TXID to <strong style="color:#0ff;">tiffanybolden00@gmail.com</strong></span>
+    </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 style="display: flex; gap: 10px; align-items: center;"><i class="fas fa-lock"></i> <span id="modalToolName">Tool Name</span></h2>
+        <p>Amount: <strong id="modalPriceUSD">$0</strong> USD · equivalent in crypto</p>
+        <hr style="margin: 12px 0;">
+        
+        <div class="payment-methods" id="methodSelector">
+            <div class="method-tab active" data-method="btc"><i class="fab fa-bitcoin"></i> Bitcoin (BTC)</div>
+            <div class="method-tab" data-method="ltc"><i class="fas fa-coins"></i> Litecoin (LTC)</div>
+            <div class="method-tab" data-method="usdc"><i class="fab fa-solana"></i> USDC (Solana)</div>
+        </div>
+
+        <div id="addressContainer">
+            <div class="crypto-address-box" id="addressBox">
+                <span class="address-text" id="cryptoAddress">bc1qz99lf0e3y04qhmlk2457d3a9n507xmt8ers0vv</span>
+                <button class="copy-btn" id="copyAddressBtn"><i class="fas fa-copy"></i> Copy Address</button>
+            </div>
+            <div id="networkWarning" class="network-warning" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i> CRITICAL: Send USDC only on Solana network. Sending to wrong network = permanent loss.
+            </div>
+        </div>
+        
+        <div class="warning-box">
+            <i class="fas fa-exclamation-triangle"></i> <strong>MANUAL VERIFICATION REQUIRED</strong><br>
+            After sending exact amount, email TXID to <strong>tiffanybolden00@gmail.com</strong> with your product name.<br>
+            <span style="color: #ffaa66;">USDC only on Solana network — wrong network = permanent loss</span>
+        </div>
+
+        <div style="background: #00000055; padding: 0.8rem; border-radius: 1rem; margin-top: 1rem;">
+            <p><i class="fas fa-envelope"></i> <strong>Contact for support:</strong> tiffanybolden00@gmail.com · delivery within hours after verification.</p>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: center;">
+            <button id="confirmPaymentBtn" class="buy-btn" style="background:#000; width: auto; padding: 0.6rem 1.6rem;">📧 I've sent payment — Notify Dev</button>
+        </div>
+    </div>
+</div>
+
+<div id="toastMsg" class="toast-msg">✅ Copied to clipboard!</div>
+
+<script>
+    // CRYPTO ADDRESSES (from original HTML)
+    const ADDRESSES = {
+        btc: "bc1qz99lf0e3y04qhmlk2457d3a9n507xmt8ers0vv",
+        ltc: "ltc1q6s3q7r7jx3mdwx4l59ttcpd0tft0dspm5j5ak5",
+        usdc: "Gwqzo4NDKkqtHz4CUNiBaFwq8N3x6Y7BDpzTGUgLsbLY"
+    };
+    
+    let currentTool = { name: "", priceUSD: 0 };
+    let currentMethod = "btc";
+
+    const modal = document.getElementById("paymentModal");
+    const modalToolNameSpan = document.getElementById("modalToolName");
+    const modalPriceSpan = document.getElementById("modalPriceUSD");
+    const cryptoAddressSpan = document.getElementById("cryptoAddress");
+    const copyBtn = document.getElementById("copyAddressBtn");
+    const methodTabs = document.querySelectorAll(".method-tab");
+    const confirmPaymentBtn = document.getElementById("confirmPaymentBtn");
+    const toast = document.getElementById("toastMsg");
+    const networkWarning = document.getElementById("networkWarning");
+
+    // Update address and network warning
+    function updateAddressDisplay() {
+        let addr = "";
+        let showWarning = false;
+        if (currentMethod === "btc") {
+            addr = ADDRESSES.btc;
+            showWarning = false;
+        } else if (currentMethod === "ltc") {
+            addr = ADDRESSES.ltc;
+            showWarning = false;
+        } else if (currentMethod === "usdc") {
+            addr = ADDRESSES.usdc;
+            showWarning = true;
+        }
+        cryptoAddressSpan.innerText = addr;
+        cryptoAddressSpan.style.color = currentMethod === "usdc" ? "#14F195" : "#0ff";
+        
+        if (networkWarning) {
+            networkWarning.style.display = showWarning ? "block" : "none";
+        }
+    }
+
+    // Show toast message
+    function showToast(message, isError = false) {
+        toast.innerText = message;
+        toast.style.backgroundColor = isError ? "#ff4444" : "#0ff";
+        toast.style.color = isError ? "white" : "black";
+        toast.style.display = "block";
+        setTimeout(() => {
+            toast.style.display = "none";
+            toast.style.backgroundColor = "#0ff";
+            toast.style.color = "black";
+        }, 2500);
+    }
+
+    // FIXED COPY FUNCTION - works across all browsers
+    async function copyAddressToClipboard() {
+        const address = cryptoAddressSpan.innerText;
+        if (!address) {
+            showToast("No address to copy", true);
+            return;
+        }
+        
+        // Modern clipboard API with fallback
+        try {
+            await navigator.clipboard.writeText(address);
+            showToast("✅ Address copied to clipboard!");
+            
+            // Visual feedback on button
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            copyBtn.classList.add("copied");
+            setTimeout(() => {
+                copyBtn.innerHTML = originalText;
+                copyBtn.classList.remove("copied");
+            }, 1500);
+        } catch (err) {
+            // Fallback for older browsers or secure contexts
+            const textarea = document.createElement("textarea");
+            textarea.value = address;
+            textarea.style.position = "fixed";
+            textarea.style.opacity = "0";
+            document.body.appendChild(textarea);
+            textarea.select();
+            const success = document.execCommand("copy");
+            document.body.removeChild(textarea);
+            
+            if (success) {
+                showToast("✅ Address copied!");
+                const originalText = copyBtn.innerHTML;
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                setTimeout(() => {
+                    copyBtn.innerHTML = originalText;
+                }, 1500);
+            } else {
+                showToast("❌ Manual copy: " + address, true);
+            }
+        }
+    }
+
+    function openPaymentModal(toolName, price) {
+        currentTool = { name: toolName, priceUSD: price };
+        modalToolNameSpan.innerText = `${toolName} (standalone license)`;
+        modalPriceSpan.innerText = `$${price}`;
+        currentMethod = "btc";
+        
+        methodTabs.forEach(tab => {
+            tab.classList.remove("active");
+            if (tab.getAttribute("data-method") === "btc") tab.classList.add("active");
+        });
+        updateAddressDisplay();
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    function notifyDeveloper() {
+        const product = currentTool.name;
+        const amount = currentTool.priceUSD;
+        let methodStr = "";
+        if (currentMethod === "btc") methodStr = "Bitcoin";
+        else if (currentMethod === "ltc") methodStr = "Litecoin";
+        else methodStr = "USDC (Solana)";
+        const addressUsed = ADDRESSES[currentMethod];
+        
+        const subject = encodeURIComponent(`TXID VERIFICATION: ${product} purchase`);
+        const body = encodeURIComponent(
+`Hello, I just sent ${amount} USD in ${methodStr} to address:
+${addressUsed}
+
+Product: ${product}
+Transaction ID (TXID): [PASTE YOUR TXID HERE]
+
+Please deliver source code to this email. Thank you!`
+        );
+        window.location.href = `mailto: tiffanybolden00@gmail.com?subject=${subject}&body=${body}`;
+        showToast("📧 Email opened — paste TXID and send!");
+    }
+
+    // Event listeners
+    document.querySelectorAll(".trigger-payment").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            const toolName = btn.getAttribute("data-name");
+            const price = parseInt(btn.getAttribute("data-price"), 10);
+            openPaymentModal(toolName, price);
+            btn.classList.add("flash");
+            setTimeout(() => btn.classList.remove("flash"), 200);
+        });
+    });
+
+    methodTabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            const method = tab.getAttribute("data-method");
+            if (!method) return;
+            currentMethod = method;
+            methodTabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+            updateAddressDisplay();
+        });
+    });
+
+    // FIXED: proper copy event listener
+    copyBtn.addEventListener("click", copyAddressToClipboard);
+    
+    confirmPaymentBtn.addEventListener("click", notifyDeveloper);
+    
+    window.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+    
+    document.querySelector(".close-modal").addEventListener("click", closeModal);
+    
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.style.display === "flex") {
+            closeModal();
+        }
+    });
+</script>
+
+<footer>
+    <i class="fas fa-dragon"></i> standalone hacker tools · research & educational purposes only. you are responsible for compliance.<br>
+    Offensive security training tools · source code delivery via encrypted channel after blockchain confirmation.
+    <br><br>📡 BTC | LTC | USDC (Solana) accepted — escrow not required, direct developer sale. After payment, email TXID to tiffanybolden00@gmail.com
+</footer>
+</body>
+</html>
