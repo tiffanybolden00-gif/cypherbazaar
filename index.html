@@ -81,19 +81,43 @@
   "availability": "https://schema.org/InStock",
   "priceValidUntil": "2026-12-31",
 
-  "shippingDetails": {
-    "@type": "OfferShippingDetails",
-    "shippingRate": {
-      "@type": "MonetaryAmount",
-      "value": "0",
-      "currency": "USD"
-    }
+"shippingDetails": {
+  "@type": "OfferShippingDetails",
+
+  "shippingDestination": {
+    "@type": "DefinedRegion",
+    "addressCountry": "US"
   },
 
-  "hasMerchantReturnPolicy": {
-    "@type": "MerchantReturnPolicy",
-    "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+  "shippingRate": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": "USD"
+  },
+
+  "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+
+    "handlingTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 1,
+      "unitCode": "DAY"
+    },
+
+    "transitTime": {
+      "@type": "QuantitativeValue",
+      "minValue": 0,
+      "maxValue": 1,
+      "unitCode": "DAY"
+    }
   }
+},
+
+"hasMerchantReturnPolicy": {
+  "@type": "MerchantReturnPolicy",
+  "applicableCountry": "US",
+  "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
 }
         },
         {
